@@ -16,7 +16,7 @@ import com.github.lzyzsd.jsbridge.DefaultHandler;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private BridgeWebView webView;
-    private String headUrl = "http://test.dlszkj.com:8000/front";
+    private String headUrl = "http://cn.bing.com/";
 //    private X5WebView webview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 super.onReceivedError(view, errorCode, description, failingUrl);
             }
         });
-        webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance?fromto=android&version=3.7.8");
+        webView.loadUrl("http://cn.bing.com/");
         //必须和js同名函数，注册具体执行函数，类似java实现类。
         webView.registerHandler("submitFromWeb", new BridgeHandler() {
 
@@ -85,19 +85,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.tab1:
 //                webView.loadUrl("http://101.201.64.119:8088/front/#/notice-center?fromto=android&version=3.7.3");
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance-huo");
+                webView.loadUrl("http://cn.bing.com/");
 //                webView.loadUrl("javascript:location.hash = '#" + "finance-huo?fromto=android" + "';");
                 break;
             case R.id.tab2:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance");
+                webView.loadUrl("http://cn.bing.com/");
 //                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance?fromto=android&version=3.7.8");
 
                 break;
             case R.id.tab3:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/brand-list");
+                webView.loadUrl("http://cn.bing.com/");
                 break;
             case R.id.tab4:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/discovery");
+                webView.loadUrl("http://cn.bing.com/");
                 break;
         }
     }
