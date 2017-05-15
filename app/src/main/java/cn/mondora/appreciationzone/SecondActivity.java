@@ -27,19 +27,19 @@ public class SecondActivity extends Activity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.tab1:
 //                webView.loadUrl("http://101.201.64.119:8088/front/#/notice-center?fromto=android&version=3.7.3");
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance-huo");
+                webView.loadUrl("http://cn.bing.com/");
 //                webView.loadUrl("javascript:location.hash = '#" + "finance-huo?fromto=android" + "';");
                 break;
             case R.id.tab2:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance");
+                webView.loadUrl("http://cn.bing.com/");
 //                webView.loadUrl("http://test.dlszkj.com:8000/front/#/finance?fromto=android&version=3.7.8");
 
                 break;
             case R.id.tab3:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/brand-list");
+                webView.loadUrl("http://cn.bing.com/");
                 break;
             case R.id.tab4:
-                webView.loadUrl("http://test.dlszkj.com:8000/front/#/discovery");
+                webView.loadUrl("http://cn.bing.com/");
                 break;
         }
     }
